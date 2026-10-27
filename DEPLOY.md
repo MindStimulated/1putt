@@ -13,7 +13,7 @@ The shipping.html, privacy.html, and contact.html pages sit beside index.html.
 - Connect and test checkout. The current checkout is a demo, not a payment service.
 - Connect email signup. The current form does not save subscriber addresses.
 - Finalize the draft support pages and actual support email.
-- Update og:url and og:image in index.html to your deployment's domain.
+- og:url and og:image in index.html point at https://1putt.netlify.app/ — update them if a custom domain is added.
 - Review operational promises, product claims and testimonial permissions.
 - Replace temporary AI product photos with real photographs when available.
 
