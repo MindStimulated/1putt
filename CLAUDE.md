@@ -21,8 +21,23 @@ orders.
   is ExFAT, so this repo has `core.fileMode false` set locally and `._*`
   AppleDouble sidecar files excluded via `.git/info/exclude`; both are
   local-only, not committed.
-- **Hosting**: GitHub Pages, `main` branch, `/ (root)`. Live at
-  `https://mindstimulated.github.io/1putt-site-v2/`. No custom domain yet.
+- **Hosting** — live in two places, both auto-deploying from `main`; the
+  user chose (2026-10-27) to keep both up:
+  - **Netlify**: `https://superlative-donut-758429.netlify.app` (project
+    `superlative-donut-758429`, site ID
+    `b69a056c-96b0-4c17-9e19-8b399c6f4dab`). Linked to the repo through the
+    Netlify GitHub app, whose repo access is "only select repositories" — a
+    new repo has to be added at github.com/settings/installations before
+    Netlify can see it. Build settings come from `netlify.toml` (publish
+    repo root, no build command). Netlify turned on site protection (team
+    login) by default; the user switched it to public. If the site suddenly
+    returns 401 / "Login Redirect", check Visitor access first. Netlify
+    rewrites `.html` links to short URLs (`/shipping`) and adds its own
+    comment + script tag when serving; both are expected.
+  - **GitHub Pages**: `main` branch, `/ (root)`, at
+    `https://mindstimulated.github.io/1putt-site-v2/`.
+  - No custom domain on either yet. `og:url`/`og:image` in `index.html`
+    still point at the original `/1putt-site/` URL.
 - **Relationship to `1putt-site`**: the original version is a separate repo
   (`github.com/MindStimulated/1putt-site`, working copy at
   `/Volumes/MOVESPEED/Projects/1putt-site`) and stays live at its own URL. The
